@@ -1,1 +1,0 @@
-C:\Users\kkeirstead\.nuget\packages\microsoft.dotnet.arcade.sdk\8.0.0-beta.23378.2\tools\Build.proj

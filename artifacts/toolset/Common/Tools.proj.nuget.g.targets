@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.symboluploader.build.task\2.0.0-preview.1.21526.15\build\Microsoft.SymbolUploader.Build.Task.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.symboluploader.build.task\2.0.0-preview.1.21526.15\build\Microsoft.SymbolUploader.Build.Task.targets')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.dotnet.build.tasks.feed\8.0.0-beta.23378.2\build\Microsoft.DotNet.Build.Tasks.Feed.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.dotnet.build.tasks.feed\8.0.0-beta.23378.2\build\Microsoft.DotNet.Build.Tasks.Feed.targets')" />
-    <Import Project="$(NuGetPackageRoot)microbuild.core\0.2.0\build\MicroBuild.Core.targets" Condition="Exists('$(NuGetPackageRoot)microbuild.core\0.2.0\build\MicroBuild.Core.targets')" />
-  </ImportGroup>
-</Project>
