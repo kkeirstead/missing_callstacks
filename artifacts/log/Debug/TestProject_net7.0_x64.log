@@ -1,0 +1,9 @@
+xUnit.net Console Runner v2.4.2+f110e5bee5 (64-bit .NET 7.0.9)
+  Discovering: TestProject
+  Discovered:  TestProject
+  Starting:    TestProject
+  Finished:    TestProject
+=== TEST EXECUTION SUMMARY ===
+   TestProject  Total: 1, Errors: 0, Failed: 0, Skipped: 0, Time: 0.608s
+=== COMMAND LINE ===
+"C:\Users\kkeirstead\unmatched-frame-offsets\.dotnet\dotnet.exe" exec --depsfile "C:\Users\kkeirstead\unmatched-frame-offsets\artifacts\bin\TestProject\Debug\net7.0\TestProject.deps.json" --runtimeconfig "C:\Users\kkeirstead\unmatched-frame-offsets\artifacts\bin\TestProject\Debug\net7.0\TestProject.runtimeconfig.json"  "C:\Users\kkeirstead\.nuget\packages\xunit.runner.console/2.4.2/tools/netcoreapp2.0/xunit.console.dll" "C:\Users\kkeirstead\unmatched-frame-offsets\artifacts\bin\TestProject\Debug\net7.0\TestProject.dll" -noautoreporters -xml "C:\Users\kkeirstead\unmatched-frame-offsets\artifacts\TestResults\Debug\TestProject_net7.0_x64.xml" -html "C:\Users\kkeirstead\unmatched-frame-offsets\artifacts\TestResults\Debug\TestProject_net7.0_x64.html"  > "C:\Users\kkeirstead\unmatched-frame-offsets\artifacts\log\Debug\TestProject_net7.0_x64.log" 2>&1

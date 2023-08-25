@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kkeirstead\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\8.0.0-beta.23378.2\\tools\\Tools.proj": {}
+  },
+  "projects": {
+    "C:\\Users\\kkeirstead\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\8.0.0-beta.23378.2\\tools\\Tools.proj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kkeirstead\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\8.0.0-beta.23378.2\\tools\\Tools.proj",
+        "projectName": "Tools",
+        "projectPath": "C:\\Users\\kkeirstead\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\8.0.0-beta.23378.2\\tools\\Tools.proj",
+        "packagesPath": "C:\\Users\\kkeirstead\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kkeirstead\\unmatched-frame-offsets\\artifacts\\toolset\\Common",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kkeirstead\\unmatched-frame-offsets\\nuget.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "MicroBuild.Core": {
+              "target": "Package",
+              "version": "[0.2.0, )",
+              "autoReferenced": true
+            },
+            "MicroBuild.Core.Sentinel": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.DotNet.Build.Tasks.Feed": {
+              "target": "Package",
+              "version": "[8.0.0-beta.23378.2, )",
+              "autoReferenced": true
+            },
+            "Microsoft.DotNet.SignTool": {
+              "target": "Package",
+              "version": "[8.0.0-beta.23378.2, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Signed.Wix": {
+              "target": "Package",
+              "version": "[1.0.0-v3.14.0.5722, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SymbolUploader.Build.Task": {
+              "target": "Package",
+              "version": "[2.0.0-preview.1.21526.15, )",
+              "autoReferenced": true
+            },
+            "sn": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "vswhere": {
+              "target": "Package",
+              "version": "[2.6.7, )",
+              "autoReferenced": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

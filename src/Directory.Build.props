@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <IsUnitTestProject>true</IsUnitTestProject>
+  </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.DotNet.Arcade.Sdk" />
+</Project>

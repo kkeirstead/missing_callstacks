@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <VersionPrefix>8.0.0</VersionPrefix>
+    <UsingToolXliff>false</UsingToolXliff>
+  </PropertyGroup>
+</Project>

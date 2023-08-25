@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="08/24/2023 14:18:27">
+  <assembly name="TestProject.dll" environment="64-bit .NET .NET 8.0 [collection-per-class, parallel (8 threads)]" test-framework="xUnit.net 2.4.2.0" run-date="2023-08-24" run-time="14:18:27" total="1" passed="0" failed="1" skipped="0" time="0.349" errors="0">
+    <errors />
+    <collection total="1" passed="0" failed="1" skipped="0" name="Test collection for TestProject.UnitTest1" time="0.225">
+      <test name="TestProject.UnitTest1.AsyncExceptionCallStack" type="TestProject.UnitTest1" method="AsyncExceptionCallStack" time="0.2253791" result="Fail">
+        <output><![CDATA[Begin Observing Exception: System.Threading.Tasks.TaskCanceledException
+Throwing Frame: [ThrowForNonSuccess, 0x37]
+Begin Checking Thread Frames:
+- [ValidateExceptionStackFrame, 0xB5]
+- [FirstChanceExceptionCallback, 0x41]
+- [<AsyncExceptionCallStack>b__0, 0x6]
+- [ThrowForNonSuccess, 0x26]
+- [HandleNonSuccessAndDebuggerNotification, 0x2D]
+- [MoveNext, 0xD7]
+- [RunInternal, 0x40]
+- [MoveNext, 0x40]
+- [<Post>b__1, 0x0]
+- [RunOnSyncContext, 0xB]
+- [<WorkerThreadProc>b__0, 0x0]
+- [RunInternal, 0x40]
+- [Run, 0x5]
+- [WorkerThreadProc, 0x7C]
+- [<QueueUserWorkItem>b__5_0, 0x7]
+- [RunInternal, 0x40]
+- [ExecuteWithThreadLocal, 0x96]
+End Checking Thread Frames:
+End Observing Exception: System.Threading.Tasks.TaskCanceledException
+]]></output>
+        <failure exception-type="System.AggregateException">
+          <message><![CDATA[System.AggregateException : One or more errors occurred. (Assert.NotEqual() Failure\r\nExpected: Not 17\r\nActual:   17)\r\n---- Assert.NotEqual() Failure\r\nExpected: Not 17\r\nActual:   17]]></message>
+          <stack-trace><![CDATA[   at TestProject.UnitTest1.AsyncExceptionCallStack() in C:\Users\kkeirstead\unmatched-frame-offsets\src\TestProject\UnitTest1.cs:line 44
+--- End of stack trace from previous location ---
+----- Inner Stack Trace -----
+   at TestProject.UnitTest1.ValidateExceptionStackFrame(Exception thrownException, ITestOutputHelper outputHelper) in C:\Users\kkeirstead\unmatched-frame-offsets\src\TestProject\UnitTest1.cs:line 119
+   at TestProject.UnitTest1.FirstChanceExceptionCallback(Exception thrownException, List`1 assertExceptions, ITestOutputHelper outputHelper) in C:\Users\kkeirstead\unmatched-frame-offsets\src\TestProject\UnitTest1.cs:line 61]]></stack-trace>
+        </failure>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

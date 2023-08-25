@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="08/24/2023 15:18:38">
+  <assembly name="TestProject.dll" environment="64-bit .NET  [collection-per-class, parallel (8 threads)]" test-framework="xUnit.net 2.4.2.0" run-date="2023-08-24" run-time="15:18:37" total="2" passed="1" failed="1" skipped="0" time="0.767" errors="0">
+    <errors />
+    <collection total="2" passed="1" failed="1" skipped="0" name="Test collection for TestProject.UnitTest1" time="0.237">
+      <test name="TestProject.UnitTest1.ExceptionCallStack_InsideCatch" type="TestProject.UnitTest1" method="ExceptionCallStack_InsideCatch" time="0.2360553" result="Fail">
+        <output><![CDATA[Begin Observing Exception: System.NotImplementedException
+Throwing Frame: [ThrowAndCatchEclipsingExceptionInsideCatch, 0x8]
+Begin Checking Thread Frames:
+- [ValidateExceptionStackFrame, 0xB5]
+- [FirstChanceExceptionCallback, 0x41]
+- [<ExceptionCallStack_InsideCatch>b__0, 0x6]
+- [ThrowAndCatchEclipsingExceptionInsideCatch, 0x8]
+End Checking Thread Frames:
+End Observing Exception: System.NotImplementedException
+Begin Observing Exception: System.Exception
+Throwing Frame: [ThrowAndCatchEclipsingExceptionInsideCatch, 0x12]
+Begin Checking Thread Frames:
+- [ValidateExceptionStackFrame, 0xB5]
+- [FirstChanceExceptionCallback, 0x41]
+- [<ExceptionCallStack_InsideCatch>b__0, 0x6]
+- [ThrowAndCatchEclipsingExceptionInsideCatch, 0x8]
+- [ExceptionCallStack_InsideCatch, 0x33]
+- [InvokeMethod, 0xFFFFFFFF]
+- [Invoke, 0x78]
+- [Invoke, 0x0]
+- [CallTestMethod, 0x0]
+- [MoveNext, 0xC5]
+- [Start, 0x28]
+- [Start, 0x0]
+- [<InvokeTestMethodAsync>b__1, 0x1C]
+- [MoveNext, 0x20]
+- [Start, 0x28]
+- [Start, 0x0]
+- [AggregateAsync, 0x24]
+- [<InvokeTestMethodAsync>b__0, 0x22]
+- [MoveNext, 0x14]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x24]
+- [MoveNext, 0x6C]
+- [Start, 0x28]
+- [Start, 0x0]
+- [InvokeTestMethodAsync, 0x24]
+- [InvokeTestMethodAsync, 0x37]
+- [MoveNext, 0x168]
+- [Start, 0x28]
+- [Start, 0x0]
+- [<RunAsync>b__47_0, 0x1C]
+- [MoveNext, 0x14]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x24]
+- [RunAsync, 0x12]
+- [InvokeTestMethodAsync, 0x36]
+- [MoveNext, 0x79]
+- [Start, 0x28]
+- [Start, 0x0]
+- [InvokeTestAsync, 0x24]
+- [<RunAsync>b__0, 0x0]
+- [MoveNext, 0x14]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x24]
+- [MoveNext, 0x113]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x1C]
+- [RunTestAsync, 0x0]
+- [MoveNext, 0xB8]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x1C]
+- [RunAsync, 0x1E]
+- [RunTestCaseAsync, 0x1E]
+- [MoveNext, 0x4E]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunTestCasesAsync, 0x1C]
+- [MoveNext, 0x59]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x1C]
+- [RunTestMethodAsync, 0x2D]
+- [MoveNext, 0x120]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunTestMethodsAsync, 0x1C]
+- [MoveNext, 0xBE]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x1C]
+- [RunTestClassAsync, 0x31]
+- [MoveNext, 0x77]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunTestClassesAsync, 0x1C]
+- [MoveNext, 0xBE]
+- [Start, 0x28]
+- [Start, 0x0]
+- [RunAsync, 0x1C]
+- [RunTestCollectionAsync, 0x21]
+- [<RunTestCollectionsAsync>b__2, 0x0]
+- [InnerInvoke, 0xF]
+- [<.cctor>b__272_0, 0x0]
+- [RunInternal, 0x40]
+- [ExecuteWithThreadLocal, 0x96]
+- [ExecuteEntry, 0x36]
+- [<.cctor>b__8_0, 0x0]
+- [RunOnSyncContext, 0xB]
+- [<WorkerThreadProc>b__0, 0x0]
+- [RunInternal, 0x40]
+- [WorkerThreadProc, 0x7C]
+- [<QueueUserWorkItem>b__5_0, 0x7]
+- [InnerInvoke, 0x25]
+- [<.cctor>b__272_0, 0x0]
+- [RunInternal, 0x40]
+- [ExecuteWithThreadLocal, 0x96]
+- [ExecuteEntryUnsafe, 0x2B]
+- [<.cctor>b__10_0, 0x0]
+- [StartCallback, 0xE]
+End Checking Thread Frames:
+End Observing Exception: System.Exception
+]]></output>
+        <failure exception-type="System.AggregateException">
+          <message><![CDATA[System.AggregateException : One or more errors occurred. (Assert.NotEqual() Failure\r\nExpected: Not 103\r\nActual:   103)\r\n---- Assert.NotEqual() Failure\r\nExpected: Not 103\r\nActual:   103]]></message>
+          <stack-trace><![CDATA[   at TestProject.UnitTest1.ExceptionCallStack_InsideCatch() in C:\Users\kkeirstead\unmatched-frame-offsets\src\TestProject\UnitTest1.cs:line 44
+----- Inner Stack Trace -----
+   at TestProject.UnitTest1.ValidateExceptionStackFrame(Exception thrownException, ITestOutputHelper outputHelper) in C:\Users\kkeirstead\unmatched-frame-offsets\src\TestProject\UnitTest1.cs:line 143
+   at TestProject.UnitTest1.FirstChanceExceptionCallback(Exception thrownException, List`1 assertExceptions, ITestOutputHelper outputHelper) in C:\Users\kkeirstead\unmatched-frame-offsets\src\TestProject\UnitTest1.cs:line 85]]></stack-trace>
+        </failure>
+      </test>
+      <test name="TestProject.UnitTest1.ExceptionCallStack_OutsideCatch" type="TestProject.UnitTest1" method="ExceptionCallStack_OutsideCatch" time="0.0014304" result="Pass">
+        <output><![CDATA[Begin Observing Exception: System.NotImplementedException
+Throwing Frame: [ThrowAndCatchEclipsingExceptionOutsideCatch, 0xA]
+Begin Checking Thread Frames:
+- [ValidateExceptionStackFrame, 0xB5]
+- [FirstChanceExceptionCallback, 0x41]
+- [<ExceptionCallStack_OutsideCatch>b__0, 0x6]
+- [ThrowAndCatchEclipsingExceptionOutsideCatch, 0xA]
+End Checking Thread Frames:
+End Observing Exception: System.NotImplementedException
+Begin Observing Exception: System.Exception
+Throwing Frame: [ThrowAndCatchEclipsingExceptionOutsideCatch, 0x19]
+Begin Checking Thread Frames:
+- [ValidateExceptionStackFrame, 0xB5]
+- [FirstChanceExceptionCallback, 0x41]
+- [<ExceptionCallStack_OutsideCatch>b__0, 0x6]
+- [ThrowAndCatchEclipsingExceptionOutsideCatch, 0x19]
+End Checking Thread Frames:
+End Observing Exception: System.Exception
+]]></output>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
